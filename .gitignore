@@ -1,0 +1,36 @@
+# ---------------------------------------------------------------
+# Vivado output: gigabytes, never commit.
+# ---------------------------------------------------------------
+build/
+.Xil/
+*.jou
+*.log
+*.str
+*.runs/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.gen/
+*.sim/
+*.srcs/
+*.xpr
+*.dcp
+*.bin
+*.bit.bin
+
+# Bitstreams are ignored everywhere EXCEPT the deliberate hand-off folder.
+*.bit
+!bitstreams/**/*.bit
+!bitstreams/**/*.hwh
+
+# Collected build logs come back from the laptop on purpose.
+!reports/**/*.log
+
+# ---------------------------------------------------------------
+# Python / Jupyter / macOS
+# ---------------------------------------------------------------
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store

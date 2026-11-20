@@ -1,0 +1,6 @@
+# Windows batch files misbehave with LF endings; shell scripts break with CRLF.
+*.bat text eol=crlf
+*.sh  text eol=lf
+*.tcl text eol=lf
+*.bit binary
+*.hwh text
